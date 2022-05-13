@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" lang="en" class="h-100">
+<head>
+<title>ADD Product</title>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+	integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+	crossorigin="anonymous">
+</head>
+<body class="h-100 center">
+	<div class="container h-100 align-center">
+		<div class="row h-100 justify-content-center align-items-center">
+			<div class="col-10 col-md-8 col-lg-6">
+				<!-- Form -->
+				<form class="form-example" action="" method="post">
+					<h1>Add New Product</h1>
+					
+						
+								<div class="form-group">
+									<label for="productID">Product Id:</label> <input type="text"
+										required class="form-control " id="username"
+										placeholder="Product Id" name="productID">
+								</div>
+								<div class="form-group">
+									<label for="Name">Name:</label> <input type="text" required
+										class="form-control " id="Name" placeholder="Name..."
+										name="Name">
+								</div>
+								<div class="form-group">
+									<label for="Quantity">Quantity:</label> <input type="text"
+										required class="form-control " id="Quantity"
+										placeholder="Quantity..." name="Quantity">
+								</div>
+								<div class="input-group form-group">
+									<span class="input-group-text">Unit Price</span> <input
+										type="number" required class="form-control " id="UnitPrice"
+										placeholder="Unit Price..." name="UnitPrice"> <span
+										class="input-group-text">$</span>
+								</div>
+								<div class="input-group form-group">
+									<span class="input-group-text">Discount</span> <input
+										type="number" required class="form-control " id="Discount"
+										placeholder="Discount..." name="Discount"> <span
+										class="input-group-text">%</span>
+								</div>
+								<div class="form-group">
+									<label for="status">Status:</label> <select
+										class="form-control" name="status" id="status">
+										<option>Out of stock</option>
+										<option>On Sale</option>
+										<option>Best seller</option>
+									</select>
+								</div>
+							
+							
+								<img alt="" src="/images/hp.jpg" width="90%" class="">
+								<div class="form-group">
+									<label for="ProductImage">Image File:</label>
+									<input type="file"
+										required class="form-control-file " id="ProductImage"
+										placeholder="Product image" name="ProductImage" aria-describedby="ProductImage">
+									<small id="ProductImage" class="form-text text-muted">Product image is required</small>
+								</div>
+							
+						
+					
+					<!-- Input fields -->
+
+					</br>
+
+					<button type="submit" class="btn btn-primary btn-customized">ADD</button>
+					<!-- End input fields -->
+				</form>
+				<!-- Form end -->
+			</div>
+
+		</div>
+		</br>
+		<div>
+			<a href=""><h4>List Product</h4></a>
+		</div>
+
+	</div>
+</body>
+
+</html>
